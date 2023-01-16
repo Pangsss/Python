@@ -1,8 +1,26 @@
+html
+{
+            font-family: Arial;
+            font-size: 24px;
+}
 body
 {
-    font-family: Arial;
-    font-colour: #
+            background-color: #333;
+            color: white;
+
 }
+
+        a {
+            color: aliceblue;
+        }
+        table, tr, th, td, caption{
+            border: 1px solid #eee;
+            font-family: 'Courier New', Courier, monospace;
+            boarder-collapse: collapse;
+            padding: 0.5rem;
+
+        }
+
 .container
 {
 
