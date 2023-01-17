@@ -1,6 +1,5 @@
 import sqlite3
 
-
 def convert(k):
     return ''.join(k).split()
 
@@ -72,7 +71,6 @@ def show_one_display(k, f):
     conn = sqlite3.connect("tracking.db")
     c = conn.cursor()
 
-    j = convert(k)
 
     c.execute("SELECT * FROM infos")
 
