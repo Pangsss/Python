@@ -2,8 +2,9 @@ html {
             font-family: Arial;
             font-size: 26px;
         }
-        body {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.8),
+        body
+        {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.65  ),
              rgba(255, 255, 255, 0.8)), url("logistics.png");
             background-color: #cccccc;
         }
@@ -41,6 +42,10 @@ html {
             background-clip: padding-box;
         }
 
-        .container{
-
+        .container .header-search .search-box button
+        {
+            position: relative;
+            left: 305px;
+            width: 100px;
+            height: 30px;
         }
