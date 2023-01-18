@@ -9,15 +9,17 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import Display
+temp = '';
 
+class Ui_MainPage(object):
 
-class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(697, 614)
         Form.setStyleSheet("background-color: rgb(0, 0, 181);")
         self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(140, 170, 411, 91))
+        self.textBrowser.setGeometry(QtCore.QRect(100, 170, 500, 120))
         self.textBrowser.setStyleSheet("background-color: rgb(238, 238, 238);")
         self.textBrowser.setObjectName("textBrowser")
         self.textEdit = QtWidgets.QTextEdit(Form)
@@ -42,6 +44,21 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
+        temp = lambda: self.textEdit.text()
+        #self.pass_Track()
+        self.pushButton.clicked.connect(self.openDisplay)
+
+
+    # def pass_Track(self):
+    #      global temp
+    #      return temp
+
+    def openDisplay(self):
+        self.Form = QtWidgets.QWidget()
+        self.ui = Display.Ui_Form()
+        self.ui.setupUi(self.Form)
+        self.Form.show()
+        #Form.close()
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
@@ -63,7 +80,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_MainPage()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

@@ -1,0 +1,15 @@
+html {
+            font-family: Arial;
+            font-size: 24px;
+        }
+        body {
+            background-color: #333;
+            color: whitesmoke;
+        }
+        a {
+            color: aliceblue;
+        }
+
+        .container{
+
+        }

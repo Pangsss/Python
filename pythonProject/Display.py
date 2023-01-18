@@ -9,7 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import MainPage
+import Database
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -31,7 +32,7 @@ class Ui_Form(object):
         self.textBrowser_2.setStyleSheet("background-color: rgb(238, 238, 238);")
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.BackButton = QtWidgets.QPushButton(Form)
-        self.BackButton.setGeometry(QtCore.QRect(530, 560, 151, 31))
+        self.BackButton.setGeometry(QtCore.QRect(500, 530, 180, 50))
         font = QtGui.QFont()
         font.setFamily("Algerian")
         font.setPointSize(10)
@@ -51,6 +52,20 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
+        j = temp
+
+        print(j)
+        k = Database.show_one_display(j,0)
+        self.textBrowser.print_(k)
+        self.BackButton.clicked.connect(self.openMainPage)
+
+    def openMainPage(self):
+             self.Form2 = QtWidgets.QWidget()
+             self.ui = MainPage.Ui_MainPage()
+             self.ui.setupUi(self.Form2)
+             self.Form2.show()
+             #Form.close()
+
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
