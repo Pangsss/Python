@@ -1,22 +1,133 @@
 html
 {
             font-family: Arial;
-            font-size: 24px;
+            font-size: 26px;
 }
 body
 {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.8),
-             rgba(255, 255, 255, 0.8)), url("logistics.png");
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6),
+             rgba(255, 255, 255, 0.7)), url("logistics.png");
             background-color: #cccccc;
-
 }
 
         a {
             color: #B24620;
         }
-        table, tr, th, td, caption{
+
+        .container .headline
+        {
+            background: linear-gradient(rgba(205, 205, 205, 0.65  ),
+             rgba(225, 225, 225, 0.65), rgba(255, 255, 255, 0.65));
+             padding-top: 1px;
+             padding-left: 25px;
+        }
+
+        .container .track-info
+        {
+            font: Calibri;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            border-radius: 0.2rem;
+            background: linear-gradient(rgba(5, 5, 5, 0.35  ),
+             rgba(5, 5, 5, 0.55), rgba(5, 5, 5, 0.65));
+            box-shadow: 0 0 10px #bbb;
+            position: relative;
+            padding: .9rem;
+            padding-top: 0.1rem;
+
+        }
+
+        .container .track-info .id-num
+        {
+            font: Calibri;
+            color: #000000;
+            font-size: 30px;
+            text-align: center;
+            width: 25rem;
+            max-width: 95%;
+            margin: 0 auto;
+            border-radius: 1.5rem;
+            background: linear-gradient(rgba(255, 255, 255, 0.75  ),
+             rgba(255, 255, 255, 0.75));
+            box-shadow: 0 0 10px #bbb;
+            position: relative;
+            padding: .9rem;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+
+        }
+
+        .container .data-info
+        {
+            font: Calibri;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto;
+            background: linear-gradient(rgba(255, 255, 255, 0.45),
+             rgba(255, 255, 255, 0.55));
+            box-shadow: 0 0 10px #bbb;
+            position: relative;
+            padding: .9rem;
+
+        }
+        .container .data-info .inside-status
+        {
+            text-align: center;
+            width: 35rem;
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 0 10px #bbb;
+            position: relative;
+            padding: .7rem;
+            padding-top: 0.0005rem;
+            padding-bottom: 0.1rem;
+        }
+        .container .data-info .out-status
+        {
+            text-align: center;
+            width: 35rem;
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 0 10px #bbb;
+            position: relative;
+            padding: .7rem;
+            padding-top: 0.0005rem;
+            padding-bottom: 0.1rem;
+        }
+        .container .data-info .detail-status
+        {
+            text-align: center;
+            width: 35rem;
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 0 10px #bbb;
+            position: relative;
+            padding: .7rem;
+            padding-top: 0.0005rem;
+            padding-bottom: 0.1rem;
+        }
+
+
+        table, tr, th, td, caption
+        {
+            position: relative;
+            left: 30px;
             border: 1px solid #eee;
-            font-family: 'Courier New', Courier, monospace;
             boarder-collapse: collapse;
             padding: 0.5rem;
 

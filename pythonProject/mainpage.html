@@ -9,8 +9,9 @@
 </head>
 <body>
 <div class="container">
-    <h1><a href="mainpage.html">The Warehouse Tracking System Project</a></h1>
-
+    <div class="headline">
+        <h1><a href="mainpage.html">The Warehouse Tracking System Project</a></h1>
+    </div>
     <hr>
 
     <h2>Welcome to Warehouse Tracking System</h2>
@@ -18,12 +19,16 @@
 
     <div class="header-search">
         <div class="search-box">
-            <h3>Track your item</h3>
-            <form id="trackpart" action="https://httpbin.org/post" method="POST">
+            <h3>Track your item here</h3>
+            <form id="trackpart" action="*****" method="POST">                                      <!--***action="to the backend" change later***--!>
                 <input class="track-part" type="text" name="track-Num" id="track-Num" placeholder="Insert your track number">
             </form>
-            <button type="submit">Start</button>
-        <p><abbr title="Track now"><a href="trackpage.html">to track page</a></abbr></p>
+            <button type="submit">
+                <a href="trackpage">
+                    Start
+                </a>
+            </button>                                                                               <!--***backend here***--!>
+        <!--<p><abbr title="Track now"><a href="trackpage.html">to track page</a></abbr></p>--!>     <!--***temporary to check trackpage***--!>
             </div>
 
     </div>
