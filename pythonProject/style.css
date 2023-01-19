@@ -32,13 +32,14 @@ body
 
         .container .track-info
         {
-            font: Calibri;
+            font-family: Calibri;
             color: white;
-            font-size: 30px;
+            text-shadow: 2px 2px black;
+            font-size: 35px;
             text-align: center;
             max-width: 75%;
             margin: 0 auto;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             border-radius: 0.2rem;
             background: linear-gradient(rgba(5, 5, 5, 0.35  ),
              rgba(5, 5, 5, 0.55), rgba(5, 5, 5, 0.65));
@@ -51,8 +52,9 @@ body
 
         .container .track-info .id-num
         {
-            font: Calibri;
-            color: #000000;
+            font-family: Calibri;
+            color: black;
+            text-shadow: 0px 0px black;
             font-size: 30px;
             text-align: center;
             width: 25rem;
@@ -71,7 +73,6 @@ body
 
         .container .data-info
         {
-            font: Calibri;
             color: black;
             font-size: 30px;
             text-align: center;
