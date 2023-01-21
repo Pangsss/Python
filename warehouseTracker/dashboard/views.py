@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request, '')
+    return render(request, 'mainpage.html')
 
-def item(request):
-    return render(request,' ')
+def track(request):
+    return render(request, 'trackpage.html')
